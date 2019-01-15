@@ -1,7 +1,7 @@
-FROM ubuntu:latest
+FROM node:latest
 WORKDIR /install/
 RUN apt-get update && \
-apt-get install -y npm git && \
+apt-get install -y git && \
 npm install -g grunt-cli && \ 
 git clone https://github.com/gchq/CyberChef && \
 cd CyberChef && \
